@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.11.4 on win32)" generated="20230615 11:40:11.416" rpa="false">
+<suite id="s1" name="RobotFramework Demo" source="C:\Users\Prashanth T V\Robot_Framework_Workspace\RobotFramework_Demo">
+<suite id="s1-s1" name="DemoTestCases" source="C:\Users\Prashanth T V\Robot_Framework_Workspace\RobotFramework_Demo\DemoTestCases">
+<suite id="s1-s1-s1" name="LoginTestcaseOrangehrm" source="C:\Users\Prashanth T V\Robot_Framework_Workspace\RobotFramework_Demo\DemoTestCases\LoginTestcaseOrangehrm.robot">
+<test id="s1-s1-s1-t1" name="Orange HRM login">
+<kw name="OrangehrmLogin">
+<tags>
+<tag>Regression</tag>
+</tags>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20230615 11:40:11.727" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20230615 11:40:11.726" endtime="20230615 11:40:29.542"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230615 11:40:29.542" endtime="20230615 11:40:29.676"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20230615 11:40:39.679" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230615 11:40:29.677" endtime="20230615 11:40:39.679"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${name}</arg>
+<arg>&amp;{Credentials}[username]</arg>
+</arguments>
+<msg timestamp="20230615 11:40:39.679" level="WARN">Accessing variable items using '&amp;{Credentials}[username]' syntax is deprecated. Use '${Credentials}[username]' instead.</msg>
+<msg timestamp="20230615 11:40:39.679" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20230615 11:40:39.679" endtime="20230615 11:40:39.821"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>&amp;{Credentials}[password]</arg>
+</arguments>
+<msg timestamp="20230615 11:40:39.821" level="WARN">Accessing variable items using '&amp;{Credentials}[password]' syntax is deprecated. Use '${Credentials}[password]' instead.</msg>
+<msg timestamp="20230615 11:40:39.823" level="INFO">Typing text 'admim123' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20230615 11:40:39.821" endtime="20230615 11:40:39.897"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${loginbtn}</arg>
+</arguments>
+<msg timestamp="20230615 11:40:39.897" level="INFO">Clicking button '//button[text()=' Login ']'.</msg>
+<status status="PASS" starttime="20230615 11:40:39.897" endtime="20230615 11:40:39.955"></status>
+</kw>
+<status status="PASS" starttime="20230615 11:40:11.726" endtime="20230615 11:40:39.955"></status>
+</kw>
+<status status="PASS" starttime="20230615 11:40:11.725" endtime="20230615 11:40:39.961" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20230615 11:40:11.534" endtime="20230615 11:40:39.961"></status>
+</suite>
+<status status="PASS" starttime="20230615 11:40:11.531" endtime="20230615 11:40:39.969"></status>
+</suite>
+<status status="PASS" starttime="20230615 11:40:11.514" endtime="20230615 11:40:39.969"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="RobotFramework Demo">RobotFramework Demo</stat>
+<stat pass="1" fail="0" id="s1-s1" name="DemoTestCases">RobotFramework Demo.DemoTestCases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="LoginTestcaseOrangehrm">RobotFramework Demo.DemoTestCases.LoginTestcaseOrangehrm</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230615 11:40:39.679" level="WARN">Accessing variable items using '&amp;{Credentials}[username]' syntax is deprecated. Use '${Credentials}[username]' instead.</msg>
+<msg timestamp="20230615 11:40:39.821" level="WARN">Accessing variable items using '&amp;{Credentials}[password]' syntax is deprecated. Use '${Credentials}[password]' instead.</msg>
+</errors>
+</robot>
