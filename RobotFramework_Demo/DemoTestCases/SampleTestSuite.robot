@@ -1,0 +1,3 @@
+*** Test Cases ***
+MyFirstTestCase
+    Log    Hello RobotFramework...    
